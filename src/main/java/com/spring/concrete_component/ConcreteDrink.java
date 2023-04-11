@@ -3,7 +3,6 @@ package com.spring.concrete_component;
 import com.spring.component.Consumation;
 import lombok.ToString;
 
-@ToString
 public class ConcreteDrink extends Consumation {
 	
 	protected E_ConcreteDrink name;
@@ -21,4 +20,8 @@ public class ConcreteDrink extends Consumation {
 		}
 	}
 
+	public String toString() {
+		return "Drink [name="+ name + ", price="+ String.format("%.2f", this.getPrice()) + "€]";
+	}
+	
 }

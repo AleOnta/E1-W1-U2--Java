@@ -11,7 +11,7 @@ public class ExtraLargeDecorator extends ExtraAdditionDecorator {
 
 	@Override
 	public String getName() {
-		return consumation.getName() + "Large ";
+		return consumation.getName() + "+ Large ";
 	}
 
 	@Override
