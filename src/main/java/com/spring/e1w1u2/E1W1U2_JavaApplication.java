@@ -87,7 +87,7 @@ public class E1W1U2_JavaApplication {
 						int toppingPicked = askForInteger(1, 4);
 						customerToppingsList.add(toppingPicked);
 						
-						System.out.println("\nwould you like to add others toppings?");
+						System.out.println("\nWould you like to add others toppings?");
 						String others = askLetters("y", "n");
 						if (others.equals("n")) {
 							otherTopping = false;
@@ -115,7 +115,7 @@ public class E1W1U2_JavaApplication {
 					+ "Order report: \n");
 			System.out.println(pizza);
 			System.out.println(drink);
-			System.out.println("\ntotal amount --> " + String.format("%.2f", pizza.getPrice() + drink.getPrice()) + "€");
+			System.out.println("\nTotal amount --> " + String.format("%.2f", pizza.getPrice() + drink.getPrice()) + "€");
 		}
 		
 			case 2 -> {
@@ -153,7 +153,7 @@ public class E1W1U2_JavaApplication {
 							int toppingPicked = askForInteger(1, 4);
 							customerToppingsList.add(toppingPicked);
 							
-							System.out.println("\nwould you like to add others toppings?");
+							System.out.println("\nWould you like to add others toppings?");
 							String others = askLetters("y", "n");
 							if (others.equals("n")) {
 								otherTopping = false;
@@ -179,7 +179,7 @@ public class E1W1U2_JavaApplication {
 				System.out.println("\n\n"
 						+ "Order report: \n");
 				System.out.println(pizza);
-				System.out.println("\ntotal amount --> " + String.format("%.2f", pizza.getPrice()) + "€");
+				System.out.println("\nTotal amount --> " + String.format("%.2f", pizza.getPrice()) + "€");
 			}
 			
 			case 3 -> {
@@ -206,7 +206,7 @@ public class E1W1U2_JavaApplication {
 				System.out.println("\n\n"
 						+ "Order report: \n");
 				System.out.println(drink);
-				System.out.println("\ntotal amount --> " + String.format("%.2f", drink.getPrice()) + "€");
+				System.out.println("\nTotal amount --> " + String.format("%.2f", drink.getPrice()) + "€");
 				
 			}
 			
@@ -222,7 +222,7 @@ public class E1W1U2_JavaApplication {
 			if(pick >= s && pick <= f) {
 				break;
 			} else {
-				System.out.println("invalid value, try again\n");
+				System.out.println("Invalid value, try again\n");
 				continue;
 			}		
 		}
@@ -240,7 +240,7 @@ public class E1W1U2_JavaApplication {
 			if(pick.equals(uno) || pick.equals(due)) {
 				break;
 			} else {
-				System.out.println("invalid char, try again\n");
+				System.out.println("Invalid char, try again\n");
 				continue;
 			}
 		}
